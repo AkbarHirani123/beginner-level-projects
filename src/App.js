@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import PageInfo from './components/PageInfo/PageInfo';
-import PageBody from './components/PageBody/PageBody';
+import Home from './components/Body/Home/Home';
+import ProjectHome from './components/Body/Projects/ProjectHome';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-        <div className="App">
-            <Header />
-            <PageInfo />
-            <PageBody />
-            <Footer />
-        </div>
+        <Router>
+            <div className="App">
+                <Header />
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/projects/:projectId" component={ProjectHome} />
+                </Switch>
+                <Footer />
+            </div>
+        </Router>
     );
   }
 }
