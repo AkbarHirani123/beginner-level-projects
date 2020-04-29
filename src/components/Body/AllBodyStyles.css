@@ -1,0 +1,13 @@
+.back-button:hover {
+    color:#999;
+    cursor: pointer;
+}
+.back-button {
+    position: absolute;
+    left: 10%;
+    background: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+}

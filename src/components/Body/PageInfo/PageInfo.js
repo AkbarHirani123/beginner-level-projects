@@ -1,5 +1,27 @@
 import React, { Component } from 'react';
+import { useHistory } from 'react-router-dom';
+import '../AllBodyStyles.css';
 
+export function BackButton({ children }) {
+    let history = useHistory()
+    return (
+        <button type="button" onClick={() => history.goBack()} className="back-button" >
+            Back
+        </button>
+    )
+};
+
+class ScrollToTopOnMount extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+  
+    render() {
+        return null;
+    }
+}
+  
+  
 
 export class PageInfo extends Component {
     constructor(props) {
@@ -15,27 +37,28 @@ export class PageInfo extends Component {
     }
 
     render() {
-        let link = this.state.prevPage;
-        if(link === ""){
+        let name = this.props.name;
+        if(name === undefined){
             return (
                 <div className="App-page-info">
+                    <ScrollToTopOnMount />
                     <div className="greyinfo">
                         <div className="grey-text">Let's learn some React!</div>
                     </div>
                 </div>
             );
-        } else if (link === "page1") {
+        } else {
             return (
                 <div className="App-page-info">
+                    <ScrollToTopOnMount />
                     <div className="greyinfo">
-                        <a href="/{link}" className="back-button">&#x2190; Back </a>
-                        <div className="grey-text">Let's learn some React!</div>
+                        <BackButton />
+                        <div className="grey-text">{name}</div>
                     </div>
                 </div>
             );
-
         }
     }
-}
+};
 
 export default PageInfo;

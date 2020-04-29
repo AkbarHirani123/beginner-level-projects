@@ -10,8 +10,10 @@ export default class ProjectHome extends Component {
         if(this.props.match.params.projectId === "project-1-carousel") {
             return (
                 <div>
-                    <PageInfo />
-                    <MyCarousel />
+                    <PageInfo name="Carousel" />
+                    <div className="App-body">
+                        <MyCarousel />
+                    </div>
                 </div>
             );
         } else {
