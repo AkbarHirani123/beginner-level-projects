@@ -11,3 +11,23 @@
     text-transform: uppercase;
     border-bottom: 1px solid;
 }
+p.code {
+    background: #0C0C0C;
+    padding: 15px 25px;
+    color: #eee;
+    width: 50%;
+    margin: auto;
+    border-radius: 3px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 30px auto;
+}
+.lesson-container {
+    width:65%;
+    border: 1px solid #eee;
+    margin: 50px auto;
+    background:#f8faff;
+    padding: 30px 5% 50px;
+}

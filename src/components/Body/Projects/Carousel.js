@@ -41,6 +41,20 @@ export class MyCarousel extends Component {
                     This carousel was created using the React Responsive Carousel Package.<br /><br />
                     <a href="https://www.npmjs.com/package/react-responsive-carousel" targed="blank" >Source</a>
                 </p>
+                <div className="lesson-container">
+                    <h3>Lessons:</h3>
+                    <p>First, create and open a React project. Open command prompt to install the React Responsive Carousel Package.</p>
+                    <p className="code">npm i react-responsive-carousel</p>
+                    <p>Import the necessary component and css files from the imported package into your file.</p>
+                    <p className="code">import &#123; Carousel &#125; from 'react-responsive-carousel';<br/>
+                        import "react-responsive-carousel/lib/styles/carousel.min.css";</p>
+                    <p>Write the carousel component into the return of your render function. Use the following format.</p>
+                    <p className="code">
+                    {"<Carousel>"}<br />&nbsp;&nbsp;{"<div>"}<br />&nbsp;&nbsp;&nbsp;&nbsp;{"<img src=\"image1 src\" alt=\"Image 1 Alt\" />"}<br />&nbsp;&nbsp;&nbsp;&nbsp;{"<p className=\"legend\">Image 1 text</p>"}<br />&nbsp;&nbsp;{"</div>"}
+                    <br />&nbsp;&nbsp;{"<div>"}<br />&nbsp;&nbsp;&nbsp;&nbsp;{"<img src=\"image2 src\" alt=\"Image 2 Alt\" />"}<br />&nbsp;&nbsp;&nbsp;&nbsp;{"<p className=\"legend\">Image 2 text</p>"}<br />&nbsp;&nbsp;{"</div>"}<br />{"<Carousel>"}
+                    </p>
+                    <p>And you're done!<br /><br />If you want to make any changes to this carousel, check the source above this lesson for an advanced documentation from the creators of this useful library.</p>
+                </div>
             </div>
         );
     }

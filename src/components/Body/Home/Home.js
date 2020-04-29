@@ -34,7 +34,7 @@ export class Home extends Component {
                         <strong>Beginner Projects:</strong>
                         <ol>
                             <li><Link to='/projects/project-1-carousel'>Project 1 - Carousel</Link></li>
-                            <li><Link to='/projects/project-2-carousel'>Project 2 - Carousel</Link></li>
+                            <li><Link to='/projects/project-2'>Project 2 - Voting System</Link></li>
                         </ol>
                     </div>
                 </div>

@@ -74,3 +74,13 @@
     text-decoration: none;
     border-bottom: 1px solid #000;
 }
+
+body a:hover {
+    color: #111
+}
+
+body a {
+    color:rgb(100, 103, 138);
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
