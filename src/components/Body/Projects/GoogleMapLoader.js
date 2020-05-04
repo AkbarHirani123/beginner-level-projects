@@ -1,4 +1,25 @@
 import React, {PropTypes} from "react"
+/* 
+import GoogleMap from "react-google-map"
+import GoogleMapLoader from "react-google-maps-loader"
+
+import iconMarker from "./assets/iconMarker.svg"
+import iconMarkerHover from "./assets/iconMarkerHover.svg"
+
+import styles from "./index.css"
+
+const MY_API_KEY = "AIzaSyDwsdjfskhdbfjsdjbfksiTgnoriOAoUOgsUqOs10J0" // fake
+
+const Map = ({googleMaps}) => (
+  GoogleMap component has a 100% height style.
+  You have to set the DOM parent height.
+  So you can perfectly handle responsive with differents heights.
+  <div className={styles.map}>
+    <GoogleMap
+      googleMaps={googleMaps}
+      You can add and remove coordinates on the fly.
+      The map will rerender new markers and remove the old ones.
+      coordinates={[
 
 import GoogleMap from "react-google-map"
 import GoogleMapLoader from "react-google-maps-loader"
@@ -11,14 +32,35 @@ import styles from "./index.css"
 const MY_API_KEY = "AIzaSyDwsdjfskhdbfjsdjbfksiTgnoriOAoUOgsUqOs10J0" // fake
 
 const Map = ({googleMaps}) => (
-  // GoogleMap component has a 100% height style.
-  // You have to set the DOM parent height.
-  // So you can perfectly handle responsive with differents heights.
+  GoogleMap component has a 100% height style.
+  You have to set the DOM parent height.
+  So you can perfectly handle responsive with differents heights.
   <div className={styles.map}>
     <GoogleMap
       googleMaps={googleMaps}
-      // You can add and remove coordinates on the fly.
-      // The map will rerender new markers and remove the old ones.
+      You can add and remove coordinates on the fly.
+      The map will rerender new markers and remove the old ones.
+      coordinates={[
+
+import GoogleMap from "react-google-map"
+import GoogleMapLoader from "react-google-maps-loader"
+
+import iconMarker from "./assets/iconMarker.svg"
+import iconMarkerHover from "./assets/iconMarkerHover.svg"
+
+import styles from "./index.css"
+
+const MY_API_KEY = "AIzaSyDwsdjfskhdbfjsdjbfksiTgnoriOAoUOgsUqOs10J0" // fake
+
+const Map = ({googleMaps}) => (
+  GoogleMap component has a 100% height style.
+  You have to set the DOM parent height.
+  So you can perfectly handle responsive with differents heights.
+  <div className={styles.map}>
+    <GoogleMap
+      googleMaps={googleMaps}
+      You can add and remove coordinates on the fly.
+      The map will rerender new markers and remove the old ones.
       coordinates={[
         {
           title: "Toulouse",
@@ -27,10 +69,10 @@ const Map = ({googleMaps}) => (
             lng: 1.443363,
           },
           onLoaded: (googleMaps, map, marker) => {
-            // Set Marker animation
+            Set Marker animation
             marker.setAnimation(googleMaps.Animation.BOUNCE)
 
-            // Define Marker InfoWindow
+            Define Marker InfoWindow
             const infoWindow = new googleMaps.InfoWindow({
               content: `
                 <div>
@@ -44,12 +86,12 @@ const Map = ({googleMaps}) => (
               `,
             })
 
-            // Open InfoWindow when Marker will be clicked
+            Open InfoWindow when Marker will be clicked
             googleMaps.event.addListener(marker, "click", () => {
               infoWindow.open(map, marker)
             })
 
-            // Change icon when Marker will be hovered
+            Change icon when Marker will be hovered
             googleMaps.event.addListener(marker, "mouseover", () => {
               marker.setIcon(iconMarkerHover)
             })
@@ -58,7 +100,7 @@ const Map = ({googleMaps}) => (
               marker.setIcon(iconMarker)
             })
 
-            // Open InfoWindow directly
+            Open InfoWindow directly
             infoWindow.open(map, marker)
           },
         }
@@ -75,8 +117,8 @@ const Map = ({googleMaps}) => (
 Map.propTypes = {
   googleMaps: PropTypes.object.isRequired,
 }
-
-export default GoogleMapLoader(Map, {
+ */
+export default GoogleMapLoader(/* Map, {
   libraries: ["places"],
   key: MY_API_KEY,
-})
+} */);

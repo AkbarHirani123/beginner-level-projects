@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Home from '../Home/Home'
 import PageInfo from '../PageInfo/PageInfo';
-import { MyCarousel, GoogleMapLoader } from './Carousel';
+import { MyCarousel } from './Carousel';
+import { VotingSystem } from './VotingSystem';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -15,13 +16,13 @@ export default class ProjectHome extends Component {
                         <MyCarousel />
                     </div>
                 </div>
-            );
-        } else if(this.props.match.params.projectId === "project-2") {
+            );wx
+        } else if(this.props.match.params.projectId === "project-2-voting-system") {
             return (
                 <div>
-                    <PageInfo name="Google Maps" />
+                    <PageInfo name="Voting System" />
                     <div className="App-body">
-                        <GoogleMapLoader />
+                        <VotingSystem />
                     </div>
                 </div>
             );
