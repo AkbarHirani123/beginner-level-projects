@@ -16,7 +16,7 @@ export default class ProjectHome extends Component {
                         <MyCarousel />
                     </div>
                 </div>
-            );wx
+            );
         } else if(this.props.match.params.projectId === "project-2-voting-system") {
             return (
                 <div>
