@@ -4,6 +4,7 @@ import PageInfo from '../PageInfo/PageInfo';
 import { MyCarousel } from './Carousel';
 import { VotingSystem } from './VotingSystem';
 import { AutoComplete } from './AutoComplete';
+import { BootstrapNav } from './BootstrapNav';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -30,9 +31,18 @@ export default class ProjectHome extends Component {
         } else if(this.props.match.params.projectId === "project-3-autocomplete") {
             return (
                 <div>
-                    <PageInfo name="Voting System" />
+                    <PageInfo name="Autocomplete" />
                     <div className="App-body">
                         <AutoComplete />
+                    </div>
+                </div>
+            );
+        } else if(this.props.match.params.projectId === "project-4-nav") {
+            return (
+                <div>
+                    <PageInfo name="Bootstrap Nav" />
+                    <div className="App-body">
+                        <BootstrapNav />
                     </div>
                 </div>
             );

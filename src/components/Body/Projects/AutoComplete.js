@@ -49,7 +49,7 @@ export class AutoComplete extends Component {
         const { text, suggestions } = this.state;
         return(
             <div className="container">
-                <h1>Autocomplete</h1>
+                <h2>Autocomplete</h2>
                 <div className="autocomplete-container">
                     <h3>Type in the name of any country</h3>
                     <input id="query" type="text" onChange={this.onTextChange} value={text}/>

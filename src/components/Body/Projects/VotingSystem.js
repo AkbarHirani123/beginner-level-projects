@@ -23,7 +23,7 @@ export class VotingSystem extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Simple Voting App</h1>
+                <h2>Simple Voting App</h2>
                 <div className="languages">
                     {
                         this.state.languages.map((lang, i) => 
@@ -51,7 +51,7 @@ export class VotingSystem extends Component {
                     {'render()'}&#123;<br />
 &nbsp;&nbsp;{'return('}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;{'<>'}<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<h1>Vote Your Language!</h1>'}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<h2>Vote Your Language!</h2>'}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<div className="languages">'}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'this.state.languages.map((lang, i) => '}<br />

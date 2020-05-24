@@ -27,7 +27,7 @@ p.code {
     white-space:nowrap;
 }
 .lesson-container {
-    width:65%;
+    width:100%;
     border: 1px solid #eee;
     margin: 50px auto;
     background:#f8faff;
@@ -145,4 +145,14 @@ p.code {
     padding: 10px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/*
+*
+    Autocomplete CSS
+*
+*/
+
+body nav a {
+    border: none;
 }

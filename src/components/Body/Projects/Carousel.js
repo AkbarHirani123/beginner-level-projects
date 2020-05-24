@@ -16,7 +16,7 @@ export class MyCarousel extends Component {
     render() {
         return (
             <div className="container">
-                <h1>React Responsive Carousel</h1>
+                <h2>React Responsive Carousel</h2>
                 <div style={styles}>
                     <Carousel showStatus={false} infiniteLoop={true} autoPlay={true} >
                         <div>
