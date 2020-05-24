@@ -35,6 +35,12 @@ export class Home extends Component {
                         <ol>
                             <li><Link to='/projects/project-1-carousel'>Project 1 - Carousel</Link></li>
                             <li><Link to='/projects/project-2-voting-system'>Project 2 - Voting System</Link></li>
+                            <li><Link to='/projects/project-3-autocomplete'>Project 3 - Autocomplete</Link></li>
+                        </ol>
+                        <br />
+                        <strong>Bootstrap Projects:</strong>
+                        <ol>
+                            <li><Link to='/projects/project-4-nav'>Project 4 - Creating Bootstrap Navigation</Link></li>
                         </ol>
                     </div>
                 </div>
