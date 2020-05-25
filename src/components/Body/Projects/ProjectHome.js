@@ -5,6 +5,7 @@ import { MyCarousel } from './Carousel';
 import { VotingSystem } from './VotingSystem';
 import { AutoComplete } from './AutoComplete';
 import { BootstrapNav } from './BootstrapNav';
+import { BootstrapCards } from './BootstrapCards';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -43,6 +44,15 @@ export default class ProjectHome extends Component {
                     <PageInfo name="Bootstrap Nav" />
                     <div className="App-body">
                         <BootstrapNav />
+                    </div>
+                </div>
+            );
+        } else if(this.props.match.params.projectId === "project-5-cards") {
+            return (
+                <div>
+                    <PageInfo name="Bootstrap Nav" />
+                    <div className="App-body">
+                        <BootstrapCards />
                     </div>
                 </div>
             );
