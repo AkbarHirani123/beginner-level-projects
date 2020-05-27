@@ -6,6 +6,7 @@ import { VotingSystem } from './VotingSystem';
 import { AutoComplete } from './AutoComplete';
 import { BootstrapNav } from './BootstrapNav';
 import { BootstrapCards } from './BootstrapCards';
+import { BootstrapSite } from './BootstrapSite';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -50,9 +51,18 @@ export default class ProjectHome extends Component {
         } else if(this.props.match.params.projectId === "project-5-cards") {
             return (
                 <div>
-                    <PageInfo name="Bootstrap Nav" />
+                    <PageInfo name="Bootstrap Cards" />
                     <div className="App-body">
                         <BootstrapCards />
+                    </div>
+                </div>
+            );
+        }  else if(this.props.match.params.projectId === "project-6-full-site") {
+            return (
+                <div>
+                    <PageInfo name="Bootstrap Site" />
+                    <div className="App-body">
+                        <BootstrapSite />
                     </div>
                 </div>
             );

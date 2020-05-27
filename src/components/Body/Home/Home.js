@@ -42,6 +42,7 @@ export class Home extends Component {
                         <ol>
                             <li><Link to='/projects/project-4-nav'>Project 4 - Creating Bootstrap Navigation</Link></li>
                             <li><Link to='/projects/project-5-cards'>Project 5 - Bootstrap Cards</Link></li>
+                            <li><Link to='/projects/project-6-full-site'>Project 6 - Full Site using React Bootstrap</Link></li>
                         </ol>
                     </div>
                 </div>

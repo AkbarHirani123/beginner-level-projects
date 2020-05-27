@@ -78,7 +78,7 @@ export class BootstrapCards extends Component {
                         {'</div>'}'
                     </p>
                     <p>I simply utilized the existing bootstrap classes to create the card container. <br /><br />Notice how I made an object for each card content. It's just to make things easy for myself.</p>
-
+                    <p>Here is a resource for you: <a href="https://react-bootstrap.github.io/components/cards/">React Bootstrap Cards Documentation</a></p>
                 </div>
             </div>
         );
